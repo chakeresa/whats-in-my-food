@@ -6,9 +6,13 @@ RSpec.describe UsdaFoodApiService do
     VCR.turn_off!
     ingredient = "sweet potatoes"
     service = UsdaFoodApiService.new
-    require 'pry'; binding.pry
-    expect(service.foods_with_ingredient(ingredient).count).to eq(531)
-    expect(service.foods_with_ingredient(ingredient)).to have_key("some key")
-    expect(service.foods_with_ingredient(ingredient).first).to have_key("some other key")
+    expect(service.foods_with_ingredient(ingredient)).to have_key("list")
+    expect(service.foods_with_ingredient(ingredient)["list"]["total"]).to eq(531)
+    # "group", "name", "ndbno", "ds", "manu"
+    expect(service.foods_with_ingredient(ingredient)["list"]["item"].first).to have_key("group")
+    expect(service.foods_with_ingredient(ingredient)["list"]["item"].first).to have_key("name")
+    expect(service.foods_with_ingredient(ingredient)["list"]["item"].first).to have_key("ndbno")
+    expect(service.foods_with_ingredient(ingredient)["list"]["item"].first).to have_key("ds")
+    expect(service.foods_with_ingredient(ingredient)["list"]["item"].first).to have_key("manu")
   end
 end
