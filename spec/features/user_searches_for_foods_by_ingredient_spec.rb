@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'User searches for foods by ingredient' do
   it 'shows a count and list of foods with that ingredient' do
     visit '/'
-    fill_in "some field", with: "sweet potatoes"
+    fill_in "q", with: "sweet potatoes"
     click_button "Search"
 
     expect(current_path).to eq('/foods')
