@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'User searches for foods by ingredient' do
   it 'shows a count and list of foods with that ingredient' do
+    WebMock.allow_net_connect!
+    VCR.turn_off!
     visit '/'
     fill_in "q", with: "sweet potatoes"
     click_button "Search"
