@@ -6,19 +6,23 @@ class FoodIndexFacade
   end
 
   def foods
-    foods_hash = service.foods_with_ingredient(@ingredient)
+    foods_hash = response["list"]["item"]
     foods_hash.map do |food_data|
       Food.new(food_data)
-    end
+    end.first(10)
   end
 
   def food_count
-    foods.count
+    response["list"]["total"]
   end
 
   private
 
   def service
     UsdaFoodApiService.new
+  end
+
+  def response
+    service.foods_with_ingredient(@ingredient)
   end
 end

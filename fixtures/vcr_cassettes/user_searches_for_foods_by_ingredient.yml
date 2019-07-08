@@ -1,0 +1,2543 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/ndb/search?api_key=<APIDATAGOV_API_KEY>&q=sweet%20potatoes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 08 Jul 2019 16:28:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3168'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "q": "sweet potatoes",
+                "sr": "1",
+                "ds": "any",
+                "start": 0,
+                "end": 150,
+                "total": 531,
+                "group": "",
+                "sort": "r",
+                "item": [
+                    {
+                        "offset": 0,
+                        "group": "Branded Food Products Database",
+                        "name": "ONE POTATO TWO POTATO, PLAIN JAYNES, SWEET POTATO CHIPS, UPC: 785654000544",
+                        "ndbno": "45094945",
+                        "ds": "LI",
+                        "manu": "Dieffenbach's Potato Chips"
+                    },
+                    {
+                        "offset": 1,
+                        "group": "Branded Food Products Database",
+                        "name": "TERRA, SWEET POTATO CHIPS, PUMPKIN SPICE SWEETS, UPC: 728229014751",
+                        "ndbno": "45165952",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 2,
+                        "group": "Branded Food Products Database",
+                        "name": "CHILI'S, SWEET & SPICY CHICKEN & SWEET POTATOES, BIG BOLD, UPC: 717854470377",
+                        "ndbno": "45109414",
+                        "ds": "LI",
+                        "manu": "Bellisio Foods Inc"
+                    },
+                    {
+                        "offset": 3,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO POPPED POTATO CRISPS, UPC: 075450137415",
+                        "ndbno": "45219208",
+                        "ds": "LI",
+                        "manu": "Hy-Vee, Inc."
+                    },
+                    {
+                        "offset": 4,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO KETTLE POTATO CHIPS, UPC: 762111242839",
+                        "ndbno": "45324838",
+                        "ds": "LI",
+                        "manu": "STARBUCKS COFFEE COMPANY"
+                    },
+                    {
+                        "offset": 5,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, RED POTATOES, CARROTS & PARSNIPS VEGETABLES FOR ROASTING, UPC: 070560970907",
+                        "ndbno": "45372027",
+                        "ds": "LI",
+                        "manu": "The Pictsweet Company"
+                    },
+                    {
+                        "offset": 6,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato leaves, raw",
+                        "ndbno": "11505",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 7,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",
+                        "ndbno": "11507",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 8,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, canned, mashed",
+                        "ndbno": "11514",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 9,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, frozen, unprepared (Includes foods for USDA's Food Distribution Program)",
+                        "ndbno": "11516",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 10,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, juice, apple-sweet potato",
+                        "ndbno": "42266",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 11,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet Potato puffs, frozen, unprepared",
+                        "ndbno": "31025",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 12,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato leaves, cooked, steamed, without salt",
+                        "ndbno": "11506",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 13,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, boiled, without skin",
+                        "ndbno": "11510",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 14,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, frozen, cooked, baked, without salt",
+                        "ndbno": "11517",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 15,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, canned, syrup pack, solids and liquids",
+                        "ndbno": "11645",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 16,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, canned, syrup pack, drained solids",
+                        "ndbno": "11647",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 17,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, candied, home-prepared",
+                        "ndbno": "11659",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 18,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato leaves, cooked, steamed, with salt",
+                        "ndbno": "11874",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 19,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, frozen, cooked, baked, with salt",
+                        "ndbno": "11877",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 20,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet Potatoes, french fried, crosscut, frozen, unprepared",
+                        "ndbno": "31024",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 21,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, baked in skin, flesh, without salt",
+                        "ndbno": "11508",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 22,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, baked in skin, flesh, with salt",
+                        "ndbno": "11875",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 23,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, boiled, without skin, with salt",
+                        "ndbno": "11876",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 24,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet Potatoes, french fried, frozen as packaged, salt added in processing",
+                        "ndbno": "31023",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 25,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, vegetables, sweet potatoes strained",
+                        "ndbno": "03108",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 26,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, vegetables, sweet potatoes, junior",
+                        "ndbno": "03109",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 27,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, corn and sweet potatoes, strained",
+                        "ndbno": "03934",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 28,
+                        "group": "Snacks",
+                        "name": "Snacks, sweet potato chips, unsalted",
+                        "ndbno": "25012",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 29,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, fruit and vegetable, apple and sweet potato",
+                        "ndbno": "03154",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 30,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, dinner, sweet potatoes and chicken, strained",
+                        "ndbno": "03303",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 31,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES IN LIGHT SYRUP, UPC: 822486107871",
+                        "ndbno": "45221578",
+                        "ds": "LI",
+                        "manu": "Independent Marketing Alliance"
+                    },
+                    {
+                        "offset": 32,
+                        "group": "Branded Food Products Database",
+                        "name": "FARMER'S MARKET FRITTATA WITH SWEET POTATO-MANGO HASH & SPICY GARDEN SALSA, UPC: 840423100051",
+                        "ndbno": "45011572",
+                        "ds": "LI",
+                        "manu": "LYFE Kitchen Retail, Inc."
+                    },
+                    {
+                        "offset": 33,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES IN LIGHT SYRUP, UPC: 036800836266",
+                        "ndbno": "45355925",
+                        "ds": "LI",
+                        "manu": "Topco Associates, Inc."
+                    },
+                    {
+                        "offset": 34,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 036800836365",
+                        "ndbno": "45278490",
+                        "ds": "LI",
+                        "manu": "Topco Associates, Inc."
+                    },
+                    {
+                        "offset": 35,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PIE BARS, UPC: 094723510045",
+                        "ndbno": "45211845",
+                        "ds": "LI",
+                        "manu": "S.A.C. Industries, Inc."
+                    },
+                    {
+                        "offset": 36,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 053495120432",
+                        "ndbno": "45210704",
+                        "ds": "LI",
+                        "manu": "Garden Cut, Inc."
+                    },
+                    {
+                        "offset": 37,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CINNAMON SQUEEZABLE SNACK, UPC: 818512017283",
+                        "ndbno": "45081375",
+                        "ds": "LI",
+                        "manu": "SPROUT FOODS, INC."
+                    },
+                    {
+                        "offset": 38,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO & KALE SAUTE, UPC: 20042196",
+                        "ndbno": "45208797",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 39,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO, UPC: 085239389508",
+                        "ndbno": "45215980",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 40,
+                        "group": "Branded Food Products Database",
+                        "name": "IMAGINE, SOUP, CREAMY SWEET POTATO, UPC: 084253240864",
+                        "ndbno": "45341804",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 41,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC CHIPOTLE SWEET POTATO SOUP, UPC: 052603054652",
+                        "ndbno": "45001984",
+                        "ds": "LI",
+                        "manu": "PACIFIC FOODS OF OREGON, INC."
+                    },
+                    {
+                        "offset": 42,
+                        "group": "Branded Food Products Database",
+                        "name": "HOPE HUMMUS, SWEET POTATO HUMMUS, UPC: 856500004020",
+                        "ndbno": "45001950",
+                        "ds": "LI",
+                        "manu": "Hope Foods, LLC"
+                    },
+                    {
+                        "offset": 43,
+                        "group": "Branded Food Products Database",
+                        "name": "STRAIGHT CUT FRENCH FRIES SWEET POTATO, UPC: 035826084071",
+                        "ndbno": "45209948",
+                        "ds": "LI",
+                        "manu": "Food Town Stores Inc."
+                    },
+                    {
+                        "offset": 44,
+                        "group": "Branded Food Products Database",
+                        "name": "STEAK CHIMICHURRI QUINOA WITH ROASTED SWEET POTATOES, UPC: 20042417",
+                        "ndbno": "45260961",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 45,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO, UPC: 20042431",
+                        "ndbno": "45215046",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 46,
+                        "group": "Branded Food Products Database",
+                        "name": "YAMS CUT SWEET POTATOES IN SYRUP, UPC: 038259107768",
+                        "ndbno": "45360812",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 47,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED ORGANIC SWEET POTATO SLICES, UPC: 032601025403",
+                        "ndbno": "45209849",
+                        "ds": "LI",
+                        "manu": "Natural Selection Foods, LLC"
+                    },
+                    {
+                        "offset": 48,
+                        "group": "Branded Food Products Database",
+                        "name": "CRINKLE CUT FRENCH FRIED SWEET POTATOES, UPC: 708820306820",
+                        "ndbno": "45039990",
+                        "ds": "LI",
+                        "manu": "Meijer, Inc."
+                    },
+                    {
+                        "offset": 49,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 705393300170",
+                        "ndbno": "45339510",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 50,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN SYRUP, UPC: 688267026379",
+                        "ndbno": "45339118",
+                        "ds": "LI",
+                        "manu": "Ahold USA, Inc."
+                    },
+                    {
+                        "offset": 51,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED SWEET POTATO & KALE BLEND, UPC: 085239008744",
+                        "ndbno": "45345413",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 52,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES IN LIGHT SYRUP, UPC: 041497189014",
+                        "ndbno": "45005859",
+                        "ds": "LI",
+                        "manu": "WEIS MARKETS, INC."
+                    },
+                    {
+                        "offset": 53,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES IN LIGHT SYRUP, UPC: 041497188741",
+                        "ndbno": "45005860",
+                        "ds": "LI",
+                        "manu": "WEIS MARKETS, INC."
+                    },
+                    {
+                        "offset": 54,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PECAN PIE BARS, UPC: 638102661562",
+                        "ndbno": "45288320",
+                        "ds": "LI",
+                        "manu": "Eicotech Corporation"
+                    },
+                    {
+                        "offset": 55,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC FIRE ROASTED SWEET POTATOES, UPC: 021908422374",
+                        "ndbno": "45181497",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 56,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES, UPC: 043427006187",
+                        "ndbno": "45287903",
+                        "ds": "LI",
+                        "manu": "Lieber Chocolate & Food Products Co."
+                    },
+                    {
+                        "offset": 57,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC SWEET POTATO FRIES, UPC: 079893407494",
+                        "ndbno": "45287815",
+                        "ds": "LI",
+                        "manu": "Glencourt Inc."
+                    },
+                    {
+                        "offset": 58,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, UPC: 865648000009",
+                        "ndbno": "45365892",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 59,
+                        "group": "Branded Food Products Database",
+                        "name": "LENTIL SWEET POTATO APPLE, UPC: 696859072772",
+                        "ndbno": "45287158",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 60,
+                        "group": "Branded Food Products Database",
+                        "name": "DELIGHTS\u2122, ROASTED TURKEY AND SWEET POTATO STUFFING, UPC: 021131301620",
+                        "ndbno": "45286379",
+                        "ds": "LI",
+                        "manu": "Marie Callender's Retail Foods"
+                    },
+                    {
+                        "offset": 61,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 790629122213",
+                        "ndbno": "45285790",
+                        "ds": "LI",
+                        "manu": "Wholesale Produce Supply, LLC"
+                    },
+                    {
+                        "offset": 62,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PANCAKE MIX, UPC: 860892000317",
+                        "ndbno": "45285701",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 63,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLE, UPC: 030223017127",
+                        "ndbno": "45285601",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 64,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC THAI SWEET POTATO SOUP, UPC: 052603054621",
+                        "ndbno": "45039762",
+                        "ds": "LI",
+                        "manu": "PACIFIC FOODS OF OREGON, INC."
+                    },
+                    {
+                        "offset": 65,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO KETTLE COOKED CHIPS, UPC: 021908812427",
+                        "ndbno": "45276186",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 66,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO TORTILLA CHIPS, UPC: 021908812670",
+                        "ndbno": "45276181",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 67,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO TORTILLA CHIPS, UPC: 021908482491",
+                        "ndbno": "45276177",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 68,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO BARBECUE KETTLE COOKED CHIPS, UPC: 021908812410",
+                        "ndbno": "45276165",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 69,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC SWEET POTATOES, UPC: 085239033043",
+                        "ndbno": "45231742",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 70,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO FRIES, UPC: 085239014905",
+                        "ndbno": "45274931",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 71,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CORN TORTILLA CHIPS, UPC: 085239007396",
+                        "ndbno": "45274927",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 72,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED SWEET POTATO CHUNKS, UPC: 085239005422",
+                        "ndbno": "45227443",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 73,
+                        "group": "Branded Food Products Database",
+                        "name": "MASHED SWEET POTATOES & CARROTS, UPC: 014500017437",
+                        "ndbno": "45274758",
+                        "ds": "LI",
+                        "manu": "PINNACLE FOODS GROUP LLC"
+                    },
+                    {
+                        "offset": 74,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO TORTILLA CHIP ROUNDS, UPC: 085239602539",
+                        "ndbno": "45274526",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 75,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO DIP, UPC: 759024601891",
+                        "ndbno": "45274234",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 76,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 041190014187",
+                        "ndbno": "45355481",
+                        "ds": "LI",
+                        "manu": "WAKEFERN FOOD CORPORATION"
+                    },
+                    {
+                        "offset": 77,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES IN SYRUP, UPC: 041190008629",
+                        "ndbno": "45022603",
+                        "ds": "LI",
+                        "manu": "WAKEFERN FOOD CORPORATION"
+                    },
+                    {
+                        "offset": 78,
+                        "group": "Branded Food Products Database",
+                        "name": "BAKED MASHED SWEET POTATOES WITH REAL MILK, BUTTER, BROWN SUGAR, & ROASTED PECANS, UPC: 071117023152",
+                        "ndbno": "45344706",
+                        "ds": "LI",
+                        "manu": "RESER'S FINE FOODS, INC."
+                    },
+                    {
+                        "offset": 79,
+                        "group": "Branded Food Products Database",
+                        "name": "BAKED SWEET POTATO FRIES, UPC: 708163920707",
+                        "ndbno": "45011739",
+                        "ds": "LI",
+                        "manu": "Inventure Foods, Inc."
+                    },
+                    {
+                        "offset": 80,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT GOLDEN YAMS SWEET POTATOES IN SYRUP, UPC: 041512086731",
+                        "ndbno": "45342905",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 81,
+                        "group": "Branded Food Products Database",
+                        "name": "SPICY CHICKEN SAUSAGE & SCRAMBLED EGGS WITH SWEET POTATO HASH & COCONUT RANCH DRESSING, UPC: 857938005955",
+                        "ndbno": "45330965",
+                        "ds": "LI",
+                        "manu": "Whitsons CUlinary Group"
+                    },
+                    {
+                        "offset": 82,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED PORTOBELLOS, SWEET POTATOES, MANGOES & BLACK BEANS, TURMERIC FARRO PERI PERI SAUCE, UPC: 013800190987",
+                        "ndbno": "45330303",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 83,
+                        "group": "Branded Food Products Database",
+                        "name": "OVEN ROASTED SWEET POTATOES, UPC: 052100040035",
+                        "ndbno": "45342441",
+                        "ds": "LI",
+                        "manu": "MCCORMICK & COMPANY, INC."
+                    },
+                    {
+                        "offset": 84,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS WITH SEA SALT, UPC: 036800012097",
+                        "ndbno": "45170405",
+                        "ds": "LI",
+                        "manu": "Topco Associates, Inc."
+                    },
+                    {
+                        "offset": 85,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOS, UPC: 790629122251",
+                        "ndbno": "45360051",
+                        "ds": "LI",
+                        "manu": "Wholesale Produce Supply, LLC"
+                    },
+                    {
+                        "offset": 86,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS CUT SWEET POTATOES IN SYRUP, UPC: 717544107439",
+                        "ndbno": "45327156",
+                        "ds": "LI",
+                        "manu": "Super Store Industries"
+                    },
+                    {
+                        "offset": 87,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO GLASS NOODLE, UPC: 852320000204",
+                        "ndbno": "45329512",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 88,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 605806010125",
+                        "ndbno": "45328963",
+                        "ds": "LI",
+                        "manu": "GROWERS MARKETING, LLC"
+                    },
+                    {
+                        "offset": 89,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO & CORN CHOWDER, UPC: 041497053681",
+                        "ndbno": "45326104",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 90,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO & CAULIFLOWER CRUMBLES, UPC: 605806000515",
+                        "ndbno": "45285926",
+                        "ds": "LI",
+                        "manu": "GROWERS MARKETING, LLC"
+                    },
+                    {
+                        "offset": 91,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 605806010118",
+                        "ndbno": "45328921",
+                        "ds": "LI",
+                        "manu": "GROWERS MARKETING, LLC"
+                    },
+                    {
+                        "offset": 92,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 605806000751",
+                        "ndbno": "45285930",
+                        "ds": "LI",
+                        "manu": "GROWERS MARKETING, LLC"
+                    },
+                    {
+                        "offset": 93,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, UPC: 072036985910",
+                        "ndbno": "45051339",
+                        "ds": "LI",
+                        "manu": "Harris-Teeter Inc."
+                    },
+                    {
+                        "offset": 94,
+                        "group": "Branded Food Products Database",
+                        "name": "VEGAN SWEET POTATO WELLNESS COOKIE, UPC: 853245002274",
+                        "ndbno": "45212755",
+                        "ds": "LI",
+                        "manu": "THE COOKIE DEPARTMENT"
+                    },
+                    {
+                        "offset": 95,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PUFFS, UPC: 085239101339",
+                        "ndbno": "45211608",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 96,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 728229345619",
+                        "ndbno": "45220987",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 97,
+                        "group": "Branded Food Products Database",
+                        "name": "POPPED SWEET POTATO CHIP SNACK, UPC: 011110841582",
+                        "ndbno": "45215158",
+                        "ds": "LI",
+                        "manu": "The Kroger Co."
+                    },
+                    {
+                        "offset": 98,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CRISPS, UPC: 810258020404",
+                        "ndbno": "45221476",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 99,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO STRAIGHT CUT FRIES, UPC: 840055100054",
+                        "ndbno": "45212642",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 100,
+                        "group": "Branded Food Products Database",
+                        "name": "MRS. SMITH'S, SWEET POTATO PIE, FLAKY CRUST REAL BUTTER, UPC: 027700679060",
+                        "ndbno": "45045251",
+                        "ds": "LI",
+                        "manu": "The Schwan Food Company"
+                    },
+                    {
+                        "offset": 101,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 785654000636",
+                        "ndbno": "45221297",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 102,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, UPC: 890102002022",
+                        "ndbno": "45364088",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 103,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO KETTLE COOKED CHIPS, UPC: 021908812175",
+                        "ndbno": "45346851",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 104,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO MUFFIN, UPC: 075968106606",
+                        "ndbno": "45294792",
+                        "ds": "LI",
+                        "manu": "International Commissary Corporation"
+                    },
+                    {
+                        "offset": 105,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES, UPC: 049022650572",
+                        "ndbno": "45049100",
+                        "ds": "LI",
+                        "manu": "WALGREENS CO."
+                    },
+                    {
+                        "offset": 106,
+                        "group": "Branded Food Products Database",
+                        "name": "H-E-B, SWEET POTATO TORTILLA CHIPS WITH SEA SALT, UPC: 041220880300",
+                        "ndbno": "45003328",
+                        "ds": "LI",
+                        "manu": "H E Butt Grocery Company"
+                    },
+                    {
+                        "offset": 107,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO FRIES, UPC: 074690028286",
+                        "ndbno": "45219010",
+                        "ds": "LI",
+                        "manu": "Old Dutch Foods Inc"
+                    },
+                    {
+                        "offset": 108,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 018894895374",
+                        "ndbno": "45215730",
+                        "ds": "LI",
+                        "manu": "Big Y Foods, Inc."
+                    },
+                    {
+                        "offset": 109,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES CHIPS, UPC: 071725728685",
+                        "ndbno": "45218472",
+                        "ds": "LI",
+                        "manu": "AMERICAN IMPORTING CO. INC."
+                    },
+                    {
+                        "offset": 110,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIP, UPC: 728229345664",
+                        "ndbno": "45021180",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 111,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CORN TORTILLA CHIPS, UPC: 015839009506",
+                        "ndbno": "45002674",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 112,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 030034050030",
+                        "ndbno": "45216199",
+                        "ds": "LI",
+                        "manu": "Giant Eagle, Inc."
+                    },
+                    {
+                        "offset": 113,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 030034027445",
+                        "ndbno": "45216181",
+                        "ds": "LI",
+                        "manu": "Giant Eagle, Inc."
+                    },
+                    {
+                        "offset": 114,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO KALE QUINOA SALAD, UPC: 767335011322",
+                        "ndbno": "45316850",
+                        "ds": "LI",
+                        "manu": "Dr. McDougall's Right Foods, Inc."
+                    },
+                    {
+                        "offset": 115,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO LITTLES, UPC: 080868002484",
+                        "ndbno": "45316567",
+                        "ds": "LI",
+                        "manu": "DR. PRAEGER'S SENSIBLE FOODS, INC."
+                    },
+                    {
+                        "offset": 116,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO FRIES, UPC: 075450089295",
+                        "ndbno": "45345712",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 117,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO FRIES, UPC: 075450089288",
+                        "ndbno": "45345710",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 118,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES YAMS, UPC: 608623000379",
+                        "ndbno": "45061135",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 119,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 838452005317",
+                        "ndbno": "45314812",
+                        "ds": "LI",
+                        "manu": "Jans Enterprises Corp."
+                    },
+                    {
+                        "offset": 120,
+                        "group": "Branded Food Products Database",
+                        "name": "MASHED SWEET POTATOES, UPC: 036217405444",
+                        "ndbno": "45292141",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 121,
+                        "group": "Branded Food Products Database",
+                        "name": "BROCCOLI & SWEET POTATO, UPC: 852513005122",
+                        "ndbno": "45291625",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 122,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO, UPC: 854351007016",
+                        "ndbno": "45324463",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 123,
+                        "group": "Branded Food Products Database",
+                        "name": "CLASSIC STEAMERS SWEET POTATOES, UPC: 725249100372",
+                        "ndbno": "45365641",
+                        "ds": "LI",
+                        "manu": "Garber Farms"
+                    },
+                    {
+                        "offset": 124,
+                        "group": "Branded Food Products Database",
+                        "name": "CRINKLE CUT SWEET POTATOES, UPC: 021130111848",
+                        "ndbno": "45322680",
+                        "ds": "LI",
+                        "manu": "Safeway, Inc."
+                    },
+                    {
+                        "offset": 125,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO BAKING FLOUR, UPC: 860892000300",
+                        "ndbno": "45331315",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 126,
+                        "group": "Branded Food Products Database",
+                        "name": "BIG Y, ROASTED SWEET POTATOES, UPC: 018894904120",
+                        "ndbno": "45181276",
+                        "ds": "LI",
+                        "manu": "Big Y Foods, Inc."
+                    },
+                    {
+                        "offset": 127,
+                        "group": "Branded Food Products Database",
+                        "name": "YAMS CUT SWEET POTATOES IN SYRUP, UPC: 034700092133",
+                        "ndbno": "45195201",
+                        "ds": "LI",
+                        "manu": "SAGER CREEK VEGETABLE COMPANY"
+                    },
+                    {
+                        "offset": 128,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES, UPC: 028800146315",
+                        "ndbno": "45194912",
+                        "ds": "LI",
+                        "manu": "HANOVER FOODS CORPORATION"
+                    },
+                    {
+                        "offset": 129,
+                        "group": "Branded Food Products Database",
+                        "name": "BIG Y, BARBECUE SALMON WITH ROASTED SWEET POTATOES, UPC: 018894904052",
+                        "ndbno": "45194363",
+                        "ds": "LI",
+                        "manu": "Big Y Foods, Inc."
+                    },
+                    {
+                        "offset": 130,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO, QUINOA & KALE RAVIOLI, UPC: 079706022067",
+                        "ndbno": "45030208",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 131,
+                        "group": "Branded Food Products Database",
+                        "name": "RIB CUT BBQ SWEET POTATO FRIES, UPC: 834183100178",
+                        "ndbno": "45311636",
+                        "ds": "LI",
+                        "manu": "Lamb Weston Sales, Inc."
+                    },
+                    {
+                        "offset": 132,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PIE, UPC: 072036959362",
+                        "ndbno": "45191263",
+                        "ds": "LI",
+                        "manu": "Harris-Teeter Inc."
+                    },
+                    {
+                        "offset": 133,
+                        "group": "Branded Food Products Database",
+                        "name": "YAMS CUT SWEET POTATOES IN SYRUP, UPC: 041270010764",
+                        "ndbno": "45347213",
+                        "ds": "LI",
+                        "manu": "Iga, Inc."
+                    },
+                    {
+                        "offset": 134,
+                        "group": "Branded Food Products Database",
+                        "name": "TERRA, BEAUREGARD SWEET POTATO, UPC: 728229015222",
+                        "ndbno": "45160928",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 135,
+                        "group": "Branded Food Products Database",
+                        "name": "BACHMAN, SWEET POTATO TORTILLA CHIPS, UPC: 077817159801",
+                        "ndbno": "45007023",
+                        "ds": "LI",
+                        "manu": "UTZ QUALITY FOODS, INC."
+                    },
+                    {
+                        "offset": 136,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PIE, UPC: 796220077150",
+                        "ndbno": "45218119",
+                        "ds": "LI",
+                        "manu": "American Blue Ribbon Holdings, LLC"
+                    },
+                    {
+                        "offset": 137,
+                        "group": "Branded Food Products Database",
+                        "name": "MRS.T'S, SWEET POTATO PIEROGIES, UPC: 041164444347",
+                        "ndbno": "45006558",
+                        "ds": "LI",
+                        "manu": "ATEECO, INC."
+                    },
+                    {
+                        "offset": 138,
+                        "group": "Branded Food Products Database",
+                        "name": "SOUTHWEST SWEET POTATO, UPC: 854212007582",
+                        "ndbno": "45347904",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 139,
+                        "group": "Branded Food Products Database",
+                        "name": "BAKED SWEET POTATO FRIES, UPC: 708163921025",
+                        "ndbno": "45200363",
+                        "ds": "LI",
+                        "manu": "Inventure Foods, Inc."
+                    },
+                    {
+                        "offset": 140,
+                        "group": "Branded Food Products Database",
+                        "name": "DIERBERGS KITCHEN, HOUSE-MADE SWEET POTATO HUMMUS, MILD CHIPOTLE, UPC: 023933930602",
+                        "ndbno": "45172615",
+                        "ds": "LI",
+                        "manu": "Dierberg's Markets, Inc."
+                    },
+                    {
+                        "offset": 141,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PIE, UPC: 783045659388",
+                        "ndbno": "45192509",
+                        "ds": "LI",
+                        "manu": "Bonert's Incorporated"
+                    },
+                    {
+                        "offset": 142,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO GNOCCHI, UPC: 051024403605",
+                        "ndbno": "45190970",
+                        "ds": "LI",
+                        "manu": "John's Ravioli Co.Inc."
+                    },
+                    {
+                        "offset": 143,
+                        "group": "Branded Food Products Database",
+                        "name": "PERUVIAN SWEET POTATO PANCAKE & WAFFLE MIX, UPC: 856321004117",
+                        "ndbno": "45203725",
+                        "ds": "LI",
+                        "manu": "Zema's Madhouse Foods, inc."
+                    },
+                    {
+                        "offset": 144,
+                        "group": "Branded Food Products Database",
+                        "name": "MCCORMICK, GOURMET, RECIPE & SEASONING MIX, BOURBON SPICED PORK, WITH ROASTED SWEET POTATOES & APPLES, UPC: 052100019451",
+                        "ndbno": "45011137",
+                        "ds": "LI",
+                        "manu": "MCCORMICK & COMPANY, INC."
+                    },
+                    {
+                        "offset": 145,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES, UPC: 607880010794",
+                        "ndbno": "45199694",
+                        "ds": "LI",
+                        "manu": "Bruno's Supermarkets, Inc."
+                    },
+                    {
+                        "offset": 146,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, UPC: 826561500014",
+                        "ndbno": "45363568",
+                        "ds": "LI",
+                        "manu": "Spring Acres Sales Company Inc."
+                    },
+                    {
+                        "offset": 147,
+                        "group": "Branded Food Products Database",
+                        "name": "AMERICA'S CHOICE, SWEET POTATO STRAIGHT CUT FRIES, UPC: 754807120255",
+                        "ndbno": "45185483",
+                        "ds": "LI",
+                        "manu": "The Great Atlantic & Pacific Tea Company, Inc."
+                    },
+                    {
+                        "offset": 148,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED FRESH SWEET POTATO WITH BROWN SUGAR SAUCE AND SPICES, UPC: 041268200252",
+                        "ndbno": "45255009",
+                        "ds": "LI",
+                        "manu": "Hannaford Bros. Co."
+                    },
+                    {
+                        "offset": 149,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 856823004110",
+                        "ndbno": "45150483",
+                        "ds": "LI",
+                        "manu": "Jackson's Honest Chips"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Mon, 08 Jul 2019 16:27:52 GMT
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/ndb/search?api_key=<APIDATAGOV_API_KEY>&q=sweet%20potatoes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 08 Jul 2019 16:43:01 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3070'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "q": "sweet potatoes",
+                "sr": "1",
+                "ds": "any",
+                "start": 0,
+                "end": 150,
+                "total": 531,
+                "group": "",
+                "sort": "r",
+                "item": [
+                    {
+                        "offset": 0,
+                        "group": "Branded Food Products Database",
+                        "name": "ONE POTATO TWO POTATO, PLAIN JAYNES, SWEET POTATO CHIPS, UPC: 785654000544",
+                        "ndbno": "45094945",
+                        "ds": "LI",
+                        "manu": "Dieffenbach's Potato Chips"
+                    },
+                    {
+                        "offset": 1,
+                        "group": "Branded Food Products Database",
+                        "name": "TERRA, SWEET POTATO CHIPS, PUMPKIN SPICE SWEETS, UPC: 728229014751",
+                        "ndbno": "45165952",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 2,
+                        "group": "Branded Food Products Database",
+                        "name": "CHILI'S, SWEET & SPICY CHICKEN & SWEET POTATOES, BIG BOLD, UPC: 717854470377",
+                        "ndbno": "45109414",
+                        "ds": "LI",
+                        "manu": "Bellisio Foods Inc"
+                    },
+                    {
+                        "offset": 3,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO POPPED POTATO CRISPS, UPC: 075450137415",
+                        "ndbno": "45219208",
+                        "ds": "LI",
+                        "manu": "Hy-Vee, Inc."
+                    },
+                    {
+                        "offset": 4,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO KETTLE POTATO CHIPS, UPC: 762111242839",
+                        "ndbno": "45324838",
+                        "ds": "LI",
+                        "manu": "STARBUCKS COFFEE COMPANY"
+                    },
+                    {
+                        "offset": 5,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, RED POTATOES, CARROTS & PARSNIPS VEGETABLES FOR ROASTING, UPC: 070560970907",
+                        "ndbno": "45372027",
+                        "ds": "LI",
+                        "manu": "The Pictsweet Company"
+                    },
+                    {
+                        "offset": 6,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato leaves, raw",
+                        "ndbno": "11505",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 7,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",
+                        "ndbno": "11507",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 8,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, canned, mashed",
+                        "ndbno": "11514",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 9,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, frozen, unprepared (Includes foods for USDA's Food Distribution Program)",
+                        "ndbno": "11516",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 10,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, juice, apple-sweet potato",
+                        "ndbno": "42266",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 11,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet Potato puffs, frozen, unprepared",
+                        "ndbno": "31025",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 12,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato leaves, cooked, steamed, without salt",
+                        "ndbno": "11506",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 13,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, boiled, without skin",
+                        "ndbno": "11510",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 14,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, frozen, cooked, baked, without salt",
+                        "ndbno": "11517",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 15,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, canned, syrup pack, solids and liquids",
+                        "ndbno": "11645",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 16,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, canned, syrup pack, drained solids",
+                        "ndbno": "11647",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 17,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, candied, home-prepared",
+                        "ndbno": "11659",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 18,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato leaves, cooked, steamed, with salt",
+                        "ndbno": "11874",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 19,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, frozen, cooked, baked, with salt",
+                        "ndbno": "11877",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 20,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet Potatoes, french fried, crosscut, frozen, unprepared",
+                        "ndbno": "31024",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 21,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, baked in skin, flesh, without salt",
+                        "ndbno": "11508",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 22,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, baked in skin, flesh, with salt",
+                        "ndbno": "11875",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 23,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet potato, cooked, boiled, without skin, with salt",
+                        "ndbno": "11876",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 24,
+                        "group": "Vegetables and Vegetable Products",
+                        "name": "Sweet Potatoes, french fried, frozen as packaged, salt added in processing",
+                        "ndbno": "31023",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 25,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, vegetables, sweet potatoes strained",
+                        "ndbno": "03108",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 26,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, vegetables, sweet potatoes, junior",
+                        "ndbno": "03109",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 27,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, corn and sweet potatoes, strained",
+                        "ndbno": "03934",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 28,
+                        "group": "Snacks",
+                        "name": "Snacks, sweet potato chips, unsalted",
+                        "ndbno": "25012",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 29,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, fruit and vegetable, apple and sweet potato",
+                        "ndbno": "03154",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 30,
+                        "group": "Baby Foods",
+                        "name": "Babyfood, dinner, sweet potatoes and chicken, strained",
+                        "ndbno": "03303",
+                        "ds": "SR",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 31,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES IN LIGHT SYRUP, UPC: 822486107871",
+                        "ndbno": "45221578",
+                        "ds": "LI",
+                        "manu": "Independent Marketing Alliance"
+                    },
+                    {
+                        "offset": 32,
+                        "group": "Branded Food Products Database",
+                        "name": "FARMER'S MARKET FRITTATA WITH SWEET POTATO-MANGO HASH & SPICY GARDEN SALSA, UPC: 840423100051",
+                        "ndbno": "45011572",
+                        "ds": "LI",
+                        "manu": "LYFE Kitchen Retail, Inc."
+                    },
+                    {
+                        "offset": 33,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES IN LIGHT SYRUP, UPC: 036800836266",
+                        "ndbno": "45355925",
+                        "ds": "LI",
+                        "manu": "Topco Associates, Inc."
+                    },
+                    {
+                        "offset": 34,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 036800836365",
+                        "ndbno": "45278490",
+                        "ds": "LI",
+                        "manu": "Topco Associates, Inc."
+                    },
+                    {
+                        "offset": 35,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PIE BARS, UPC: 094723510045",
+                        "ndbno": "45211845",
+                        "ds": "LI",
+                        "manu": "S.A.C. Industries, Inc."
+                    },
+                    {
+                        "offset": 36,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 053495120432",
+                        "ndbno": "45210704",
+                        "ds": "LI",
+                        "manu": "Garden Cut, Inc."
+                    },
+                    {
+                        "offset": 37,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CINNAMON SQUEEZABLE SNACK, UPC: 818512017283",
+                        "ndbno": "45081375",
+                        "ds": "LI",
+                        "manu": "SPROUT FOODS, INC."
+                    },
+                    {
+                        "offset": 38,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO & KALE SAUTE, UPC: 20042196",
+                        "ndbno": "45208797",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 39,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO, UPC: 085239389508",
+                        "ndbno": "45215980",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 40,
+                        "group": "Branded Food Products Database",
+                        "name": "IMAGINE, SOUP, CREAMY SWEET POTATO, UPC: 084253240864",
+                        "ndbno": "45341804",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 41,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC CHIPOTLE SWEET POTATO SOUP, UPC: 052603054652",
+                        "ndbno": "45001984",
+                        "ds": "LI",
+                        "manu": "PACIFIC FOODS OF OREGON, INC."
+                    },
+                    {
+                        "offset": 42,
+                        "group": "Branded Food Products Database",
+                        "name": "HOPE HUMMUS, SWEET POTATO HUMMUS, UPC: 856500004020",
+                        "ndbno": "45001950",
+                        "ds": "LI",
+                        "manu": "Hope Foods, LLC"
+                    },
+                    {
+                        "offset": 43,
+                        "group": "Branded Food Products Database",
+                        "name": "STRAIGHT CUT FRENCH FRIES SWEET POTATO, UPC: 035826084071",
+                        "ndbno": "45209948",
+                        "ds": "LI",
+                        "manu": "Food Town Stores Inc."
+                    },
+                    {
+                        "offset": 44,
+                        "group": "Branded Food Products Database",
+                        "name": "STEAK CHIMICHURRI QUINOA WITH ROASTED SWEET POTATOES, UPC: 20042417",
+                        "ndbno": "45260961",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 45,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO, UPC: 20042431",
+                        "ndbno": "45215046",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 46,
+                        "group": "Branded Food Products Database",
+                        "name": "YAMS CUT SWEET POTATOES IN SYRUP, UPC: 038259107768",
+                        "ndbno": "45360812",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 47,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED ORGANIC SWEET POTATO SLICES, UPC: 032601025403",
+                        "ndbno": "45209849",
+                        "ds": "LI",
+                        "manu": "Natural Selection Foods, LLC"
+                    },
+                    {
+                        "offset": 48,
+                        "group": "Branded Food Products Database",
+                        "name": "CRINKLE CUT FRENCH FRIED SWEET POTATOES, UPC: 708820306820",
+                        "ndbno": "45039990",
+                        "ds": "LI",
+                        "manu": "Meijer, Inc."
+                    },
+                    {
+                        "offset": 49,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 705393300170",
+                        "ndbno": "45339510",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 50,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN SYRUP, UPC: 688267026379",
+                        "ndbno": "45339118",
+                        "ds": "LI",
+                        "manu": "Ahold USA, Inc."
+                    },
+                    {
+                        "offset": 51,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED SWEET POTATO & KALE BLEND, UPC: 085239008744",
+                        "ndbno": "45345413",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 52,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES IN LIGHT SYRUP, UPC: 041497189014",
+                        "ndbno": "45005859",
+                        "ds": "LI",
+                        "manu": "WEIS MARKETS, INC."
+                    },
+                    {
+                        "offset": 53,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES IN LIGHT SYRUP, UPC: 041497188741",
+                        "ndbno": "45005860",
+                        "ds": "LI",
+                        "manu": "WEIS MARKETS, INC."
+                    },
+                    {
+                        "offset": 54,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PECAN PIE BARS, UPC: 638102661562",
+                        "ndbno": "45288320",
+                        "ds": "LI",
+                        "manu": "Eicotech Corporation"
+                    },
+                    {
+                        "offset": 55,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC FIRE ROASTED SWEET POTATOES, UPC: 021908422374",
+                        "ndbno": "45181497",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 56,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES, UPC: 043427006187",
+                        "ndbno": "45287903",
+                        "ds": "LI",
+                        "manu": "Lieber Chocolate & Food Products Co."
+                    },
+                    {
+                        "offset": 57,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC SWEET POTATO FRIES, UPC: 079893407494",
+                        "ndbno": "45287815",
+                        "ds": "LI",
+                        "manu": "Glencourt Inc."
+                    },
+                    {
+                        "offset": 58,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, UPC: 865648000009",
+                        "ndbno": "45365892",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 59,
+                        "group": "Branded Food Products Database",
+                        "name": "LENTIL SWEET POTATO APPLE, UPC: 696859072772",
+                        "ndbno": "45287158",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 60,
+                        "group": "Branded Food Products Database",
+                        "name": "DELIGHTS\u2122, ROASTED TURKEY AND SWEET POTATO STUFFING, UPC: 021131301620",
+                        "ndbno": "45286379",
+                        "ds": "LI",
+                        "manu": "Marie Callender's Retail Foods"
+                    },
+                    {
+                        "offset": 61,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 790629122213",
+                        "ndbno": "45285790",
+                        "ds": "LI",
+                        "manu": "Wholesale Produce Supply, LLC"
+                    },
+                    {
+                        "offset": 62,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PANCAKE MIX, UPC: 860892000317",
+                        "ndbno": "45285701",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 63,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLE, UPC: 030223017127",
+                        "ndbno": "45285601",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 64,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC THAI SWEET POTATO SOUP, UPC: 052603054621",
+                        "ndbno": "45039762",
+                        "ds": "LI",
+                        "manu": "PACIFIC FOODS OF OREGON, INC."
+                    },
+                    {
+                        "offset": 65,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO KETTLE COOKED CHIPS, UPC: 021908812427",
+                        "ndbno": "45276186",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 66,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO TORTILLA CHIPS, UPC: 021908812670",
+                        "ndbno": "45276181",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 67,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO TORTILLA CHIPS, UPC: 021908482491",
+                        "ndbno": "45276177",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 68,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO BARBECUE KETTLE COOKED CHIPS, UPC: 021908812410",
+                        "ndbno": "45276165",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 69,
+                        "group": "Branded Food Products Database",
+                        "name": "ORGANIC SWEET POTATOES, UPC: 085239033043",
+                        "ndbno": "45231742",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 70,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO FRIES, UPC: 085239014905",
+                        "ndbno": "45274931",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 71,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CORN TORTILLA CHIPS, UPC: 085239007396",
+                        "ndbno": "45274927",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 72,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED SWEET POTATO CHUNKS, UPC: 085239005422",
+                        "ndbno": "45227443",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 73,
+                        "group": "Branded Food Products Database",
+                        "name": "MASHED SWEET POTATOES & CARROTS, UPC: 014500017437",
+                        "ndbno": "45274758",
+                        "ds": "LI",
+                        "manu": "PINNACLE FOODS GROUP LLC"
+                    },
+                    {
+                        "offset": 74,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO TORTILLA CHIP ROUNDS, UPC: 085239602539",
+                        "ndbno": "45274526",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 75,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO DIP, UPC: 759024601891",
+                        "ndbno": "45274234",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 76,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 041190014187",
+                        "ndbno": "45355481",
+                        "ds": "LI",
+                        "manu": "WAKEFERN FOOD CORPORATION"
+                    },
+                    {
+                        "offset": 77,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES IN SYRUP, UPC: 041190008629",
+                        "ndbno": "45022603",
+                        "ds": "LI",
+                        "manu": "WAKEFERN FOOD CORPORATION"
+                    },
+                    {
+                        "offset": 78,
+                        "group": "Branded Food Products Database",
+                        "name": "BAKED MASHED SWEET POTATOES WITH REAL MILK, BUTTER, BROWN SUGAR, & ROASTED PECANS, UPC: 071117023152",
+                        "ndbno": "45344706",
+                        "ds": "LI",
+                        "manu": "RESER'S FINE FOODS, INC."
+                    },
+                    {
+                        "offset": 79,
+                        "group": "Branded Food Products Database",
+                        "name": "BAKED SWEET POTATO FRIES, UPC: 708163920707",
+                        "ndbno": "45011739",
+                        "ds": "LI",
+                        "manu": "Inventure Foods, Inc."
+                    },
+                    {
+                        "offset": 80,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT GOLDEN YAMS SWEET POTATOES IN SYRUP, UPC: 041512086731",
+                        "ndbno": "45342905",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 81,
+                        "group": "Branded Food Products Database",
+                        "name": "SPICY CHICKEN SAUSAGE & SCRAMBLED EGGS WITH SWEET POTATO HASH & COCONUT RANCH DRESSING, UPC: 857938005955",
+                        "ndbno": "45330965",
+                        "ds": "LI",
+                        "manu": "Whitsons CUlinary Group"
+                    },
+                    {
+                        "offset": 82,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED PORTOBELLOS, SWEET POTATOES, MANGOES & BLACK BEANS, TURMERIC FARRO PERI PERI SAUCE, UPC: 013800190987",
+                        "ndbno": "45330303",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 83,
+                        "group": "Branded Food Products Database",
+                        "name": "OVEN ROASTED SWEET POTATOES, UPC: 052100040035",
+                        "ndbno": "45342441",
+                        "ds": "LI",
+                        "manu": "MCCORMICK & COMPANY, INC."
+                    },
+                    {
+                        "offset": 84,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS WITH SEA SALT, UPC: 036800012097",
+                        "ndbno": "45170405",
+                        "ds": "LI",
+                        "manu": "Topco Associates, Inc."
+                    },
+                    {
+                        "offset": 85,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOS, UPC: 790629122251",
+                        "ndbno": "45360051",
+                        "ds": "LI",
+                        "manu": "Wholesale Produce Supply, LLC"
+                    },
+                    {
+                        "offset": 86,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS CUT SWEET POTATOES IN SYRUP, UPC: 717544107439",
+                        "ndbno": "45327156",
+                        "ds": "LI",
+                        "manu": "Super Store Industries"
+                    },
+                    {
+                        "offset": 87,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO GLASS NOODLE, UPC: 852320000204",
+                        "ndbno": "45329512",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 88,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 605806010125",
+                        "ndbno": "45328963",
+                        "ds": "LI",
+                        "manu": "GROWERS MARKETING, LLC"
+                    },
+                    {
+                        "offset": 89,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO & CORN CHOWDER, UPC: 041497053681",
+                        "ndbno": "45326104",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 90,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO & CAULIFLOWER CRUMBLES, UPC: 605806000515",
+                        "ndbno": "45285926",
+                        "ds": "LI",
+                        "manu": "GROWERS MARKETING, LLC"
+                    },
+                    {
+                        "offset": 91,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 605806010118",
+                        "ndbno": "45328921",
+                        "ds": "LI",
+                        "manu": "GROWERS MARKETING, LLC"
+                    },
+                    {
+                        "offset": 92,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO NOODLES, UPC: 605806000751",
+                        "ndbno": "45285930",
+                        "ds": "LI",
+                        "manu": "GROWERS MARKETING, LLC"
+                    },
+                    {
+                        "offset": 93,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, UPC: 072036985910",
+                        "ndbno": "45051339",
+                        "ds": "LI",
+                        "manu": "Harris-Teeter Inc."
+                    },
+                    {
+                        "offset": 94,
+                        "group": "Branded Food Products Database",
+                        "name": "VEGAN SWEET POTATO WELLNESS COOKIE, UPC: 853245002274",
+                        "ndbno": "45212755",
+                        "ds": "LI",
+                        "manu": "THE COOKIE DEPARTMENT"
+                    },
+                    {
+                        "offset": 95,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PUFFS, UPC: 085239101339",
+                        "ndbno": "45211608",
+                        "ds": "LI",
+                        "manu": "Target Stores"
+                    },
+                    {
+                        "offset": 96,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 728229345619",
+                        "ndbno": "45220987",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 97,
+                        "group": "Branded Food Products Database",
+                        "name": "POPPED SWEET POTATO CHIP SNACK, UPC: 011110841582",
+                        "ndbno": "45215158",
+                        "ds": "LI",
+                        "manu": "The Kroger Co."
+                    },
+                    {
+                        "offset": 98,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CRISPS, UPC: 810258020404",
+                        "ndbno": "45221476",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 99,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO STRAIGHT CUT FRIES, UPC: 840055100054",
+                        "ndbno": "45212642",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 100,
+                        "group": "Branded Food Products Database",
+                        "name": "MRS. SMITH'S, SWEET POTATO PIE, FLAKY CRUST REAL BUTTER, UPC: 027700679060",
+                        "ndbno": "45045251",
+                        "ds": "LI",
+                        "manu": "The Schwan Food Company"
+                    },
+                    {
+                        "offset": 101,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 785654000636",
+                        "ndbno": "45221297",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 102,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, UPC: 890102002022",
+                        "ndbno": "45364088",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 103,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO KETTLE COOKED CHIPS, UPC: 021908812175",
+                        "ndbno": "45346851",
+                        "ds": "LI",
+                        "manu": "SMALL PLANET FOODS, INC."
+                    },
+                    {
+                        "offset": 104,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO MUFFIN, UPC: 075968106606",
+                        "ndbno": "45294792",
+                        "ds": "LI",
+                        "manu": "International Commissary Corporation"
+                    },
+                    {
+                        "offset": 105,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES, UPC: 049022650572",
+                        "ndbno": "45049100",
+                        "ds": "LI",
+                        "manu": "WALGREENS CO."
+                    },
+                    {
+                        "offset": 106,
+                        "group": "Branded Food Products Database",
+                        "name": "H-E-B, SWEET POTATO TORTILLA CHIPS WITH SEA SALT, UPC: 041220880300",
+                        "ndbno": "45003328",
+                        "ds": "LI",
+                        "manu": "H E Butt Grocery Company"
+                    },
+                    {
+                        "offset": 107,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO FRIES, UPC: 074690028286",
+                        "ndbno": "45219010",
+                        "ds": "LI",
+                        "manu": "Old Dutch Foods Inc"
+                    },
+                    {
+                        "offset": 108,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 018894895374",
+                        "ndbno": "45215730",
+                        "ds": "LI",
+                        "manu": "Big Y Foods, Inc."
+                    },
+                    {
+                        "offset": 109,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES CHIPS, UPC: 071725728685",
+                        "ndbno": "45218472",
+                        "ds": "LI",
+                        "manu": "AMERICAN IMPORTING CO. INC."
+                    },
+                    {
+                        "offset": 110,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIP, UPC: 728229345664",
+                        "ndbno": "45021180",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 111,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CORN TORTILLA CHIPS, UPC: 015839009506",
+                        "ndbno": "45002674",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 112,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 030034050030",
+                        "ndbno": "45216199",
+                        "ds": "LI",
+                        "manu": "Giant Eagle, Inc."
+                    },
+                    {
+                        "offset": 113,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES IN LIGHT SYRUP, UPC: 030034027445",
+                        "ndbno": "45216181",
+                        "ds": "LI",
+                        "manu": "Giant Eagle, Inc."
+                    },
+                    {
+                        "offset": 114,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO KALE QUINOA SALAD, UPC: 767335011322",
+                        "ndbno": "45316850",
+                        "ds": "LI",
+                        "manu": "Dr. McDougall's Right Foods, Inc."
+                    },
+                    {
+                        "offset": 115,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO LITTLES, UPC: 080868002484",
+                        "ndbno": "45316567",
+                        "ds": "LI",
+                        "manu": "DR. PRAEGER'S SENSIBLE FOODS, INC."
+                    },
+                    {
+                        "offset": 116,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO FRIES, UPC: 075450089295",
+                        "ndbno": "45345712",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 117,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO FRIES, UPC: 075450089288",
+                        "ndbno": "45345710",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 118,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES YAMS, UPC: 608623000379",
+                        "ndbno": "45061135",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 119,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 838452005317",
+                        "ndbno": "45314812",
+                        "ds": "LI",
+                        "manu": "Jans Enterprises Corp."
+                    },
+                    {
+                        "offset": 120,
+                        "group": "Branded Food Products Database",
+                        "name": "MASHED SWEET POTATOES, UPC: 036217405444",
+                        "ndbno": "45292141",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 121,
+                        "group": "Branded Food Products Database",
+                        "name": "BROCCOLI & SWEET POTATO, UPC: 852513005122",
+                        "ndbno": "45291625",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 122,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO, UPC: 854351007016",
+                        "ndbno": "45324463",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 123,
+                        "group": "Branded Food Products Database",
+                        "name": "CLASSIC STEAMERS SWEET POTATOES, UPC: 725249100372",
+                        "ndbno": "45365641",
+                        "ds": "LI",
+                        "manu": "Garber Farms"
+                    },
+                    {
+                        "offset": 124,
+                        "group": "Branded Food Products Database",
+                        "name": "CRINKLE CUT SWEET POTATOES, UPC: 021130111848",
+                        "ndbno": "45322680",
+                        "ds": "LI",
+                        "manu": "Safeway, Inc."
+                    },
+                    {
+                        "offset": 125,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO BAKING FLOUR, UPC: 860892000300",
+                        "ndbno": "45331315",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 126,
+                        "group": "Branded Food Products Database",
+                        "name": "BIG Y, ROASTED SWEET POTATOES, UPC: 018894904120",
+                        "ndbno": "45181276",
+                        "ds": "LI",
+                        "manu": "Big Y Foods, Inc."
+                    },
+                    {
+                        "offset": 127,
+                        "group": "Branded Food Products Database",
+                        "name": "YAMS CUT SWEET POTATOES IN SYRUP, UPC: 034700092133",
+                        "ndbno": "45195201",
+                        "ds": "LI",
+                        "manu": "SAGER CREEK VEGETABLE COMPANY"
+                    },
+                    {
+                        "offset": 128,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT SWEET POTATOES, UPC: 028800146315",
+                        "ndbno": "45194912",
+                        "ds": "LI",
+                        "manu": "HANOVER FOODS CORPORATION"
+                    },
+                    {
+                        "offset": 129,
+                        "group": "Branded Food Products Database",
+                        "name": "BIG Y, BARBECUE SALMON WITH ROASTED SWEET POTATOES, UPC: 018894904052",
+                        "ndbno": "45194363",
+                        "ds": "LI",
+                        "manu": "Big Y Foods, Inc."
+                    },
+                    {
+                        "offset": 130,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO, QUINOA & KALE RAVIOLI, UPC: 079706022067",
+                        "ndbno": "45030208",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 131,
+                        "group": "Branded Food Products Database",
+                        "name": "RIB CUT BBQ SWEET POTATO FRIES, UPC: 834183100178",
+                        "ndbno": "45311636",
+                        "ds": "LI",
+                        "manu": "Lamb Weston Sales, Inc."
+                    },
+                    {
+                        "offset": 132,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PIE, UPC: 072036959362",
+                        "ndbno": "45191263",
+                        "ds": "LI",
+                        "manu": "Harris-Teeter Inc."
+                    },
+                    {
+                        "offset": 133,
+                        "group": "Branded Food Products Database",
+                        "name": "YAMS CUT SWEET POTATOES IN SYRUP, UPC: 041270010764",
+                        "ndbno": "45347213",
+                        "ds": "LI",
+                        "manu": "Iga, Inc."
+                    },
+                    {
+                        "offset": 134,
+                        "group": "Branded Food Products Database",
+                        "name": "TERRA, BEAUREGARD SWEET POTATO, UPC: 728229015222",
+                        "ndbno": "45160928",
+                        "ds": "LI",
+                        "manu": "THE HAIN CELESTIAL GROUP, INC."
+                    },
+                    {
+                        "offset": 135,
+                        "group": "Branded Food Products Database",
+                        "name": "BACHMAN, SWEET POTATO TORTILLA CHIPS, UPC: 077817159801",
+                        "ndbno": "45007023",
+                        "ds": "LI",
+                        "manu": "UTZ QUALITY FOODS, INC."
+                    },
+                    {
+                        "offset": 136,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PIE, UPC: 796220077150",
+                        "ndbno": "45218119",
+                        "ds": "LI",
+                        "manu": "American Blue Ribbon Holdings, LLC"
+                    },
+                    {
+                        "offset": 137,
+                        "group": "Branded Food Products Database",
+                        "name": "MRS.T'S, SWEET POTATO PIEROGIES, UPC: 041164444347",
+                        "ndbno": "45006558",
+                        "ds": "LI",
+                        "manu": "ATEECO, INC."
+                    },
+                    {
+                        "offset": 138,
+                        "group": "Branded Food Products Database",
+                        "name": "SOUTHWEST SWEET POTATO, UPC: 854212007582",
+                        "ndbno": "45347904",
+                        "ds": "LI",
+                        "manu": "none"
+                    },
+                    {
+                        "offset": 139,
+                        "group": "Branded Food Products Database",
+                        "name": "BAKED SWEET POTATO FRIES, UPC: 708163921025",
+                        "ndbno": "45200363",
+                        "ds": "LI",
+                        "manu": "Inventure Foods, Inc."
+                    },
+                    {
+                        "offset": 140,
+                        "group": "Branded Food Products Database",
+                        "name": "DIERBERGS KITCHEN, HOUSE-MADE SWEET POTATO HUMMUS, MILD CHIPOTLE, UPC: 023933930602",
+                        "ndbno": "45172615",
+                        "ds": "LI",
+                        "manu": "Dierberg's Markets, Inc."
+                    },
+                    {
+                        "offset": 141,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO PIE, UPC: 783045659388",
+                        "ndbno": "45192509",
+                        "ds": "LI",
+                        "manu": "Bonert's Incorporated"
+                    },
+                    {
+                        "offset": 142,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO GNOCCHI, UPC: 051024403605",
+                        "ndbno": "45190970",
+                        "ds": "LI",
+                        "manu": "John's Ravioli Co.Inc."
+                    },
+                    {
+                        "offset": 143,
+                        "group": "Branded Food Products Database",
+                        "name": "PERUVIAN SWEET POTATO PANCAKE & WAFFLE MIX, UPC: 856321004117",
+                        "ndbno": "45203725",
+                        "ds": "LI",
+                        "manu": "Zema's Madhouse Foods, inc."
+                    },
+                    {
+                        "offset": 144,
+                        "group": "Branded Food Products Database",
+                        "name": "MCCORMICK, GOURMET, RECIPE & SEASONING MIX, BOURBON SPICED PORK, WITH ROASTED SWEET POTATOES & APPLES, UPC: 052100019451",
+                        "ndbno": "45011137",
+                        "ds": "LI",
+                        "manu": "MCCORMICK & COMPANY, INC."
+                    },
+                    {
+                        "offset": 145,
+                        "group": "Branded Food Products Database",
+                        "name": "CUT YAMS SWEET POTATOES, UPC: 607880010794",
+                        "ndbno": "45199694",
+                        "ds": "LI",
+                        "manu": "Bruno's Supermarkets, Inc."
+                    },
+                    {
+                        "offset": 146,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATOES, UPC: 826561500014",
+                        "ndbno": "45363568",
+                        "ds": "LI",
+                        "manu": "Spring Acres Sales Company Inc."
+                    },
+                    {
+                        "offset": 147,
+                        "group": "Branded Food Products Database",
+                        "name": "AMERICA'S CHOICE, SWEET POTATO STRAIGHT CUT FRIES, UPC: 754807120255",
+                        "ndbno": "45185483",
+                        "ds": "LI",
+                        "manu": "The Great Atlantic & Pacific Tea Company, Inc."
+                    },
+                    {
+                        "offset": 148,
+                        "group": "Branded Food Products Database",
+                        "name": "ROASTED FRESH SWEET POTATO WITH BROWN SUGAR SAUCE AND SPICES, UPC: 041268200252",
+                        "ndbno": "45255009",
+                        "ds": "LI",
+                        "manu": "Hannaford Bros. Co."
+                    },
+                    {
+                        "offset": 149,
+                        "group": "Branded Food Products Database",
+                        "name": "SWEET POTATO CHIPS, UPC: 856823004110",
+                        "ndbno": "45150483",
+                        "ds": "LI",
+                        "manu": "Jackson's Honest Chips"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Mon, 08 Jul 2019 16:42:51 GMT
+recorded_with: VCR 5.0.0

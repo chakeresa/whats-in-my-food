@@ -4,12 +4,12 @@
     <% facade.foods.each do |food| %>
       <section class="food_list">
         <li>
-          <h3><%= food.name %></h3>
+          <h3 class="food_list-name"><%= food.name %></h3>
           <ul>
-            <li>NDB number: <%= food.ndb_number %></li>
-            <li>Food group: <%= food.food_group %></li>
-            <li>Manufacturer: <%= food.manufacturer %></li>
-            <li>Data source: <%= food.data_source %></li>
+            <li class="food_list-ndb_number">NDB number: <%= food.ndb_number %></li>
+            <li class="food_list-food_group">Food group: <%= food.food_group %></li>
+            <li class="food_list-manufacturer">Manufacturer: <%= food.manufacturer %></li>
+            <li class="food_list-data_source">Data source: <%= food.data_source %></li>
           </ul>
         </li>
       </section>
