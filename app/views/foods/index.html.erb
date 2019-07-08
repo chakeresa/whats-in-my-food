@@ -1,0 +1,18 @@
+<h2><%= facade.food_count %> results for <%= facade.ingredient %><h2>
+<section>
+  <ul>
+    <% facade.foods.each do |food| %>
+      <section class="food_list">
+        <li>
+          <h3><%= food.name %></h3>
+          <ul>
+            <li>NDB number: <%= food.ndb_number %></li>
+            <li>Food group: <%= food.food_group %></li>
+            <li>Manufacturer: <%= food.manufacturer %></li>
+            <li>Data source: <%= food.data_source %></li>
+          </ul>
+        </li>
+      </section>
+    <% end %>
+  </ul>
+</section>
