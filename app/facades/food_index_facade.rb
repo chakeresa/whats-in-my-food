@@ -1,6 +1,8 @@
 class FoodIndexFacade
-  def ingredient
-    
+  attr_reader :ingredient
+  
+  def initialize(ingredient)
+    @ingredient = ingredient
   end
 
   def foods
