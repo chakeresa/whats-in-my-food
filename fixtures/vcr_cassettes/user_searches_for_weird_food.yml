@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/ndb/search?api_key=<APIDATAGOV_API_KEY>&q=adfsadfasdfasf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Fri, 12 Jul 2019 16:13:08 GMT
+      Content-Type:
+      - text/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3547'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "errors": {
+                "error": [
+                    {
+                        "status": 400,
+                        "parameter": "results",
+                        "message": "Your search resulted in zero results.Change your parameters and try again"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 16:12:49 GMT
+recorded_with: VCR 5.0.0

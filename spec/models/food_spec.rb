@@ -1,6 +1,11 @@
-require 'rails_helper'
+require 'spec_helper'
+# ^ runs faster than rails_helper when we're just testing POROs / services
 
 RSpec.describe Food do
+  # another way of setting up the test:
+  # let(:attrs) { <put attributes hash here> }
+  # subject { Food.new(attrs) }
+  # ... then do assertions on subject
   it 'inits with attributes' do
     group = "vegetables"
     name = "cucumber"

@@ -19,10 +19,10 @@ class FoodIndexFacade
   private
 
   def service
-    UsdaFoodApiService.new
+    @service ||= UsdaFoodApiService.new
   end
 
   def response
-    service.foods_with_ingredient(@ingredient)
+    @response ||= service.foods_with_ingredient(@ingredient)
   end
 end

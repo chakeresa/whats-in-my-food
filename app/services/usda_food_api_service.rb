@@ -1,13 +1,18 @@
 class UsdaFoodApiService
   def foods_with_ingredient(ingredient)
     params = {q: ingredient}
-    fetch_data(uri_path: "/ndb/search", params: params)
+    raw_data = fetch_data(uri_path: "/ndb/search", params: params)
+  #   raw_data = {"errors"=>
+  # {"error"=>
+  #   [{"status"=>400,
+  #     "parameter"=>"results",
+  #     "message"=>"Your search resulted in zero results.Change your parameters and try again"}]}}
   end
 
   private
 
   def conn
-    conn = Faraday.new(url: 'https://api.nal.usda.gov/') do |faraday|
+    @conn ||= Faraday.new(url: 'https://api.nal.usda.gov/') do |faraday|
       faraday.adapter Faraday.default_adapter
     end
   end

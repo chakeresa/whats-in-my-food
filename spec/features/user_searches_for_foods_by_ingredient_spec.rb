@@ -11,8 +11,11 @@ RSpec.describe 'User searches for foods by ingredient' do
 
       expect(page).to have_content("531 results")
       expect(page.all('.food_list').count).to eq(10)
+      # a cleaner way of writing this ^ is below
+      expect(page).to have_css('.food_list', count: 10)
 
       within(first('.food_list')) do
+        # consider just searching expect(page).to have_css('.food_list-ndb_number') instead of specifying a particular result -- less fragile
         expect(first('.food_list-ndb_number')).to have_content("45094945")
         expect(first('.food_list-name')).to have_content("ONE POTATO TWO POTATO, PLAIN JAYNES, SWEET POTATO CHIPS, UPC: 785654000544")
         expect(first('.food_list-food_group')).to have_content("Branded Food Products Database")
@@ -21,6 +24,20 @@ RSpec.describe 'User searches for foods by ingredient' do
       end
 
       # Note: the API automatically sorts by relevance (https://ndb.nal.usda.gov/ndb/doc/apilist/API-SEARCH.md)
+    end
+  end
+
+  it 'doesnt error out if no foods found with that ingredient' do
+    VCR.use_cassette('user_searches_for_weird_food', record: :new_episodes) do
+      # WebMock.allow_net_connect!
+      # VCR.turn_off!
+      visit '/'
+      fill_in "q", with: "adfsadfasdfasf"
+      click_button "Search"
+
+      expect(current_path).to eq('/foods')
+      expect(page).to have_content("0 results")
+      expect(page).to_not have_css('.food_list')
     end
   end
 end
