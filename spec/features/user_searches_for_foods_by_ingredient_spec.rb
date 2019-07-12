@@ -29,8 +29,6 @@ RSpec.describe 'User searches for foods by ingredient' do
 
   it 'doesnt error out if no foods found with that ingredient' do
     VCR.use_cassette('user_searches_for_weird_food', record: :new_episodes) do
-      # WebMock.allow_net_connect!
-      # VCR.turn_off!
       visit '/'
       fill_in "q", with: "adfsadfasdfasf"
       click_button "Search"

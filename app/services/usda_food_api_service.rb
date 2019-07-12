@@ -1,12 +1,7 @@
 class UsdaFoodApiService
   def foods_with_ingredient(ingredient)
     params = {q: ingredient}
-    raw_data = fetch_data(uri_path: "/ndb/search", params: params)
-  #   raw_data = {"errors"=>
-  # {"error"=>
-  #   [{"status"=>400,
-  #     "parameter"=>"results",
-  #     "message"=>"Your search resulted in zero results.Change your parameters and try again"}]}}
+    fetch_data(uri_path: "/ndb/search", params: params)
   end
 
   private
